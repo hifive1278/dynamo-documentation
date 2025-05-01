@@ -1,0 +1,89 @@
+\doxysection{component\+::Animated\+Texture\+Component Class Reference}
+\hypertarget{classcomponent_1_1_animated_texture_component}{}\label{classcomponent_1_1_animated_texture_component}\index{component::AnimatedTextureComponent@{component::AnimatedTextureComponent}}
+
+
+Store a series of frames and multiple animation sequences that can be played.  
+
+
+Inheritance diagram for component\+::Animated\+Texture\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcomponent_1_1_animated_texture_component}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcomponent_1_1_animated_texture_component_1_1_frame}{Frame}}
+\begin{DoxyCompactList}\small\item\em Store an individual \doxylink{structcomponent_1_1_animated_texture_component_1_1_frame}{Frame} for an animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a5037a6233cf3008678c75aa3e618333c}\label{classcomponent_1_1_animated_texture_component_a5037a6233cf3008678c75aa3e618333c} 
+{\bfseries this} (Game\+Object owner, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r, string json\+Filename)
+\begin{DoxyCompactList}\small\item\em Hold a copy of the texture that is referenced. \end{DoxyCompactList}\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a508df38f94f48811270a6d2e80fccaed}\label{classcomponent_1_1_animated_texture_component_a508df38f94f48811270a6d2e80fccaed} 
+void {\bfseries Load\+Meta\+Data} (JSONValue json\+Content)
+\begin{DoxyCompactList}\small\item\em Load a data file that describes meta-\/data about animations stored in a single file. \end{DoxyCompactList}\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a73b28310b9ddd1032a84839daf4afb15}\label{classcomponent_1_1_animated_texture_component_a73b28310b9ddd1032a84839daf4afb15} 
+void {\bfseries set\+Animation} (string anim\+Name)
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a84b5b39790bc87968c5484c72b252790}\label{classcomponent_1_1_animated_texture_component_a84b5b39790bc87968c5484c72b252790} 
+void {\bfseries update} ()
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a021aaa039a44c80e130ae4352c89d211}\label{classcomponent_1_1_animated_texture_component_a021aaa039a44c80e130ae4352c89d211} 
+void {\bfseries render} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a48387aa869e72e3a0374c29f8aadf9be}\label{classcomponent_1_1_animated_texture_component_a48387aa869e72e3a0374c29f8aadf9be} 
+string {\bfseries m\+Filename}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a55248e6de8d77f0610976cfa67dc766d}\label{classcomponent_1_1_animated_texture_component_a55248e6de8d77f0610976cfa67dc766d} 
+\mbox{\hyperlink{structcomponent_1_1_animated_texture_component_1_1_frame}{Frame}}\mbox{[}$\,$\mbox{]} {\bfseries m\+Frames}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a03ec84cf4b075dae05d698fe5849df9b}\label{classcomponent_1_1_animated_texture_component_a03ec84cf4b075dae05d698fe5849df9b} 
+long\mbox{[}$\,$\mbox{]}\mbox{[}string\mbox{]} {\bfseries m\+Frame\+Numbers}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_ae96bdfb6368b8373553e141c4aa19620}\label{classcomponent_1_1_animated_texture_component_ae96bdfb6368b8373553e141c4aa19620} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries m\+Renderer\+Ref}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a2372ac2b2ee91df09257e2e94194e3f2}\label{classcomponent_1_1_animated_texture_component_a2372ac2b2ee91df09257e2e94194e3f2} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} {\bfseries m\+Texture}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a0b4631e1a224c98793a2adabbe09653a}\label{classcomponent_1_1_animated_texture_component_a0b4631e1a224c98793a2adabbe09653a} 
+int {\bfseries m\+Width}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a277ce943c799169bbedfd5ac51d72ad3}\label{classcomponent_1_1_animated_texture_component_a277ce943c799169bbedfd5ac51d72ad3} 
+int {\bfseries m\+Height}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a58a7b0eefd6e0db979827524087e0d67}\label{classcomponent_1_1_animated_texture_component_a58a7b0eefd6e0db979827524087e0d67} 
+\mbox{\hyperlink{classcomponent_1_1_physics_component}{Physics\+Component}} {\bfseries m\+Physics}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a2209288c2c30a559d98ac5fb65d4b150}\label{classcomponent_1_1_animated_texture_component_a2209288c2c30a559d98ac5fb65d4b150} 
+string {\bfseries m\+Current\+Animation\+Name}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a38736b4c99f56d0fed520c2656733b93}\label{classcomponent_1_1_animated_texture_component_a38736b4c99f56d0fed520c2656733b93} 
+long {\bfseries m\+Current\+Frame\+Playing}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a365c45d413573479b6c721236bae02d0}\label{classcomponent_1_1_animated_texture_component_a365c45d413573479b6c721236bae02d0} 
+long {\bfseries m\+Last\+Frame\+In\+Sequence}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a3d3b758ed53a2608f685fd3fd35c66d2}\label{classcomponent_1_1_animated_texture_component_a3d3b758ed53a2608f685fd3fd35c66d2} 
+long {\bfseries m\+Current\+Sequence\+Index}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a64c72c0ed7baa44c267ef2c8c9b8ad2a}\label{classcomponent_1_1_animated_texture_component_a64c72c0ed7baa44c267ef2c8c9b8ad2a} 
+ulong {\bfseries m\+Last\+Frame\+Time}
+\item 
+\Hypertarget{classcomponent_1_1_animated_texture_component_a646f0f7446ab236139774e0f106e7c9b}\label{classcomponent_1_1_animated_texture_component_a646f0f7446ab236139774e0f106e7c9b} 
+int {\bfseries m\+Frame\+Delay} = 200
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Store a series of frames and multiple animation sequences that can be played. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+component.\+d\end{DoxyCompactItemize}
